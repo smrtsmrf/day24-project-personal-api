@@ -40,12 +40,12 @@ module.exports = {
 				break;
 		}
 
-		res.status(200).json({'occupations': [nameQueriedOccupations]})
+		res.status(200).json({'occupations': nameQueriedOccupations})
 		
 	}, 
 
 	getLatestOccupation: function (req, res, next) {
-		res.status(200).json({'latestsOccupation': me.occupations[me.occupations.length-1]});
+		res.status(200).json({'latestOccupation': me.occupations[me.occupations.length-1]});
 	}, 
 
 	getHobbies: function (req, res, next) {

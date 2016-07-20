@@ -1,0 +1,18 @@
+h1, h3, p {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+form {
+	text-align: center;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin-bottom: 10px;
+}

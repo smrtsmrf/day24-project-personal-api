@@ -187,13 +187,13 @@ app.get('/secrets/:username/:pin', /*...*/);`
 <!-- * Try to use `req.params` and `req.query` at least once each. -->
 
 #### Step 9 (Black Diamond): Create a simple Angular app for your API
-* In a separate directory, create an Angular application
-* Using ui.router, create three routes: `/`, `/me`, and `/skills`
-  * `/`: a homepage containing basic information about you (name and location)
-  * `/me`: detailed information about you: hobbies and occupations
-  * `/skillz`: a page to display your skills
-* Create a service that handles the network requests (hint: you could create a method for each endpoint, or you could consolidate some into the same method)
-* If you arrive this far, go ahead and make some text inputs and add the logic necessary to edit or add to any of the "writeable" endpoints.
+<!-- * In a separate directory, create an Angular application -->
+<!-- * Using ui.router, create three routes: `/`, `/me`, and `/skills` -->
+  <!-- * `/`: a homepage containing basic information about you (name and location) -->
+  <!-- * `/me`: detailed information about you: hobbies and occupations -->
+  <!-- * `/skillz`: a page to display your skills -->
+<!-- * Create a service that handles the network requests (hint: you could create a method for each endpoint, or you could consolidate some into the same method) -->
+<!-- * If you arrive this far, go ahead and make some text inputs and add the logic necessary to edit or add to any of the "writeable" endpoints. -->
 
 ## Contributions
 If you see a problem or a typo, please fork, make the necessary changes, and create a pull request so we can review your changes and merge them into the master repo and branch.
