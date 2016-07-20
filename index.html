@@ -1,1 +1,30 @@
-index.html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body ng-app="apiApp">
+
+    <ui-view></ui-view>
+
+    <footer>
+        <div><a ui-sref="home" ui-sref-active="active">Home</a></div>
+        <div><a ui-sref="me" ui-sref-active="active">Me</a></div>
+        <div><a ui-sref="skills" ui-sref-active="active">Skills</a></div>
+    </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/service.js"></script>
+
+
+</body>
+</html>

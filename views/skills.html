@@ -1,0 +1,23 @@
+<h1>Skills</h1>
+<div>
+	<ol>
+		<li ng-repeat="skill in skills"><strong>{{skill.name}} </strong>
+			<ul>
+				<li><strong>Experience:</strong> {{skill.experience}}</li>
+			</ul>
+		</li>
+	</ol>
+</div>
+	<form class="navbar-form" ng-submit="postWhat('skills', newSkill, experience)">
+	<select class="form-control" ng-model="experience">
+		<option value="Noob" selected>Noob</option>
+		<option value="Beginner">Beginner</option>
+		<option value="Needs Improvement">Needs Improvement</option>
+		<option value="Intermediate">Intermediate</option>
+		<option value="Advanced">Advanced</option>
+		<option value="Ninja">Ninja</option>
+
+	</select>
+	<input class="form-control" placeholder="add new skill" ng-model="newSkill">
+	
+</form>

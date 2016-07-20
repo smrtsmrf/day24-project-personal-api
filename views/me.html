@@ -1,0 +1,22 @@
+<h1>Hobbies</h1>
+<div ng-repeat="hobby in hobbies">
+	<p>{{hobby.name}} ({{hobby.type}})</p>
+</div>
+<form class="navbar-form" ng-submit="postWhat('hobbies', newHobby, type)">
+	<select class="form-control" ng-model="type">
+		<option value="current" selected>Current</option>
+		<option value="past">Past</option>
+	</select>
+	<input class="form-control" placeholder="add new hobby" ng-model="newHobby">
+	
+</form>
+
+<h1>Occupations</h1>
+<div ng-repeat="occupation in occupations">
+	<p>{{occupation}}</p>
+</div>
+
+<form class="navbar-form" ng-submit="postWhat('occupations', newOccupation)">
+	<input class="form-control" placeholder="add new occupation" ng-model="newOccupation">
+	
+</form>
