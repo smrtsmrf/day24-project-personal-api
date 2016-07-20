@@ -76,11 +76,12 @@ angular.module('apiApp', ['ui.router'])
 		controller: function ($scope, service, skillsData) {
 			$scope.experience = 'Noob';
 			$scope.skills = skillsData;
-			
+
 			$scope.postWhat = function (endpoint, value,experience) {
 				service.postWhat(endpoint,value,null,experience).then(function () {
 					 service.getWhat(endpoint).then(function (response) {
 					 	 $scope[endpoint] = response;
+					 	 console.log(response);
 					 	 $scope.newSkill = '';
 					 })
 				})
